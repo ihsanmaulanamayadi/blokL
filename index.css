@@ -1,0 +1,14 @@
+.imgIndex {
+    width: 35%;
+}
+
+@media only screen and (max-width: 550px) {
+    .imgIndex {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .imgIndex {
+        width: 65%;
+    }
+}
