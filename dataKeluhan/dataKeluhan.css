@@ -1,12 +1,16 @@
 .keluhan {
     height: 10em;
 }
+.cardUser {
+    padding:22.5px 0;
+}
 
 @media only screen and (max-width: 768px) {
     .keluhan {
         height: 10em;
         margin-top:5px;
         padding-top: 2px;
+        font-size: 15px;
     }
 }
 @media only screen and (max-width: 411px) {
