@@ -8,7 +8,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="stylesheet" href="/dataWarga/upDatawarga/upDatawarga.css">
+    <link rel="stylesheet" href="/dataWarga/upDatawarga/upDatawarga.css">
 </head>
 
 <body>
@@ -64,19 +64,19 @@
     </nav>
 
     <div class="container d-flex justify-content-center align-items-center mt-3">
-        <form method="post" class="d-flex flex-column inputKeluhan" id="formUpdatawarga">
+        <form method="POST" class="d-flex flex-column inputKeluhan" id="formUpdatawarga">
             <h1 class="text-decoration-underline d-flex justify-content-center align-items-center mt-3">Silahkan Update
                 Data
                 Warga</h1>
             <label class="mt-3 fw-bolder" for="dataWarga">Username (alamat rumah)</label>
-            <select name="upUserName" class="px-2 py-1 mt-2 rounded-2" type="text">
+            <select name="upuserName" class="px-2 py-1 mt-2 rounded-2" type="text">
                 <option value="" disabled="" selected="" hidden="">Pilih Sesuai Alamat Rumah</option>
-                <option value="ADMIN">L6NO1</option>
-                <option value="BASIC">BASIC</option>
-                <option value="OTHER">OTHER</option>
+                <option value="L6NO1">L6NO1</option>
+                <option value="L6NO2">L6NO2</option>
+                <option value="L6NO3">L6NO3</option>
             </select>
             <label class="mt-3 fw-bolder" for="dataWarga">Berapa Jumlah Penghuni</label>
-            <select onchange="jumlahHunian()" id="jumlahHuni" class="px-2 py-1 mt-2 rounded-2" type="number">
+            <select name="jmlh" onchange="jumlahHunian()" id="jumlahHuni" class="px-2 py-1 mt-2 rounded-2" type="number">
                 <option value="" disabled="" selected="" hidden="">Pilih Jumlah</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -91,14 +91,14 @@
                     <label class="mt-3" for="dataWarga">Roll Ke-1 (contoh: Ayah)</label>
                     <select name="roll1" class="px-2 py-1 mt-2 rounded-2" type="text">
                         <option value="" disabled="" selected="" hidden="">Pilih Roll</option>
-                        <option value="">Ayah</option>
-                        <option value="">Ibu</option>
-                        <option value="">Suami</option>
-                        <option value="">Istri</option>
-                        <option value="">Anak ke1</option>
-                        <option value="">Anak ke2</option>
-                        <option value="">Anak ke3</option>
-                        <option value="">Anak ke4</option>
+                        <option value="Ayahh">Ayah</option>
+                        <option value="Ibu">Ibu</option>
+                        <option value="Suami">Suami</option>
+                        <option value="Istri">Istri</option>
+                        <option value="Anak ke1">Anak ke1</option>
+                        <option value="Anak ke2">Anak ke2</option>
+                        <option value="Anak ke3">Anak ke3</option>
+                        <option value="Anak ke4">Anak ke4</option>
                     </select>
                     <label class="mt-3" for="nama1">Nama</label>
                     <input class="mt-1 py-1 rounded-2" type="text" id="nama1" name="nama1" placeholder="Masukan Nama">
@@ -112,14 +112,14 @@
                     <label class="mt-3" for="dataWarga">Roll Ke-2</label>
                     <select name="roll2" class="px-2 py-1 mt-2 rounded-2" type="text">
                         <option value="" disabled="" selected="" hidden="">Pilih Roll</option>
-                        <option value="">Ayah</option>
-                        <option value="">Ibu</option>
-                        <option value="">Suami</option>
-                        <option value="">Istri</option>
-                        <option value="">Anak ke1</option>
-                        <option value="">Anak ke2</option>
-                        <option value="">Anak ke3</option>
-                        <option value="">Anak ke4</option>
+                        <option value="Ayahh">Ayah</option>
+                        <option value="Ibu">Ibu</option>
+                        <option value="Suami">Suami</option>
+                        <option value="Istri">Istri</option>
+                        <option value="Anak ke1">Anak ke1</option>
+                        <option value="Anak ke2">Anak ke2</option>
+                        <option value="Anak ke3">Anak ke3</option>
+                        <option value="Anak ke4">Anak ke4</option>
                     </select>
                     <label class="mt-3" for="nama2">Nama</label>
                     <input class="mt-1 py-1 rounded-2" type="text" id="nama2" name="nama2" placeholder="Masukan Nama">
@@ -134,15 +134,14 @@
                     <label class="mt-3" for="dataWarga">Roll Ke-3</label>
                     <select name="roll3" class="px-2 py-1 mt-2 rounded-2" type="text">
                         <option value="" disabled="" selected="" hidden="">Pilih Roll</option>
-                        <option value="">Ayah</option>
-                        < <option value="">Ayah</option>
-                        <option value="">Ibu</option>
-                        <option value="">Suami</option>
-                        <option value="">Istri</option>
-                        <option value="">Anak ke1</option>
-                        <option value="">Anak ke2</option>
-                        <option value="">Anak ke3</option>
-                        <option value="">Anak ke4</option>
+                        <option value="Ayahh">Ayah</option>
+                        <option value="Ibu">Ibu</option>
+                        <option value="Suami">Suami</option>
+                        <option value="Istri">Istri</option>
+                        <option value="Anak ke1">Anak ke1</option>
+                        <option value="Anak ke2">Anak ke2</option>
+                        <option value="Anak ke3">Anak ke3</option>
+                        <option value="Anak ke4">Anak ke4</option>
                     </select>
                     <label class="mt-3" for="nama3">Nama</label>
                     <input class="mt-1 py-1 rounded-2" type="text" id="nama3" name="nama3" placeholder="Masukan Nama">
@@ -157,14 +156,14 @@
                     <label class="mt-3" for="dataWarga">Roll Ke-4</label>
                     <select name="roll4" class="px-2 py-1 mt-2 rounded-2" type="text">
                         <option value="" disabled="" selected="" hidden="">Pilih Roll</option>
-                        <option value="">Ayah</option>
-                        <option value="">Ibu</option>
-                        <option value="">Suami</option>
-                        <option value="">Istri</option>
-                        <option value="">Anak ke1</option>
-                        <option value="">Anak ke2</option>
-                        <option value="">Anak ke3</option>
-                        <option value="">Anak ke4</option>
+                        <option value="Ayahh">Ayah</option>
+                        <option value="Ibu">Ibu</option>
+                        <option value="Suami">Suami</option>
+                        <option value="Istri">Istri</option>
+                        <option value="Anak ke1">Anak ke1</option>
+                        <option value="Anak ke2">Anak ke2</option>
+                        <option value="Anak ke3">Anak ke3</option>
+                        <option value="Anak ke4">Anak ke4</option>
                     </select>
                     <label class="mt-3" for="nama4">Nama</label>
                     <input class="mt-1 py-1 rounded-2" type="text" id="nama4" name="nama4" placeholder="Masukan Nama">
@@ -178,14 +177,14 @@
                     <label class="mt-3" for="dataWarga">Roll Ke-5</label>
                     <select name="roll5" class="px-2 py-1 mt-2 rounded-2" type="text">
                         <option value="" disabled="" selected="" hidden="">Pilih Roll</option>
-                        <option value="">Ayah</option>
-                        <option value="">Ibu</option>
-                        <option value="">Suami</option>
-                        <option value="">Istri</option>
-                        <option value="">Anak ke1</option>
-                        <option value="">Anak ke2</option>
-                        <option value="">Anak ke3</option>
-                        <option value="">Anak ke4</option>
+                        <<option value="Ayahh">Ayah</option>
+                            <option value="Ibu">Ibu</option>
+                            <option value="Suami">Suami</option>
+                            <option value="Istri">Istri</option>
+                            <option value="Anak ke1">Anak ke1</option>
+                            <option value="Anak ke2">Anak ke2</option>
+                            <option value="Anak ke3">Anak ke3</option>
+                            <option value="Anak ke4">Anak ke4</option>
                     </select>
                     <label class="mt-3" for="nama5">Nama</label>
                     <input class="mt-1 py-1 rounded-2" type="text" id="nama5" name="nama5" placeholder="Masukan Nama">
@@ -199,14 +198,14 @@
                     <label class="mt-3" for="userName">Roll Ke-6</label>
                     <select name="roll6" class="px-2 py-1 mt-2 rounded-2" type="text">
                         <option value="" disabled="" selected="" hidden="">Pilih Roll</option>
-                        <option value="">Ayah</option>
-                        <option value="">Ibu</option>
-                        <option value="">Suami</option>
-                        <option value="">Istri</option>
-                        <option value="">Anak ke1</option>
-                        <option value="">Anak ke2</option>
-                        <option value="">Anak ke3</option>
-                        <option value="">Anak ke4</option>
+                        <option value="Ayahh">Ayah</option>
+                        <option value="Ibu">Ibu</option>
+                        <option value="Suami">Suami</option>
+                        <option value="Istri">Istri</option>
+                        <option value="Anak ke1">Anak ke1</option>
+                        <option value="Anak ke2">Anak ke2</option>
+                        <option value="Anak ke3">Anak ke3</option>
+                        <option value="Anak ke4">Anak ke4</option>
                     </select>
                     <label class="mt-3" for="nama6">Nama</label>
                     <input class="mt-1 py-1 rounded-2" type="text" id="nama6" name="nama6" placeholder="Masukan Nama">
@@ -214,11 +213,8 @@
                     <input class="mt-1 py-1 rounded-2" type="date" id="ttl6" name="ttl6" placeholder="Masukan Nama">
                 </div>
             </div>
-            <!-- <label class="mt-3 fw-bolder" for=" Password">Buat Password</label>
-            <input class="mt-1 px-2 py-1 rounded-2" type="buatPassword" id="buatPassword" name="password"
-                placeholder="Masukan Password"> -->
             <div class="d-flex mt-1 gap-1">
-                <input class="mt-1 btn btn-success mb-3 w-50" type="submit" name="upDatawarga" value="update">
+                <input class="mt-1 btn btn-success mb-3 w-50" type="submit" name="submit" value="update">
                 <input class="mt-1 btn btn-danger mb-3 w-50" type="submit" name="delDatawarga" value="Delete">
             </div>
         </form>
@@ -233,3 +229,40 @@
 </body>
 
 </html>
+<?php 
+include "/xampp/htdocs/blokL/koneksi.php";
+if(isset($_POST['submit'])){
+
+    $username = $_POST['upuserName'];
+    $jmlh = $_POST['jmlh'];
+    $roll1 = $_POST['roll1'];
+    $roll2 = $_POST['roll2'];
+    $roll3 = $_POST['roll3'];
+    $roll4 = $_POST['roll4'];
+    $roll5 = $_POST['roll5'];
+    $roll6 = $_POST['roll6'];
+    $nm1 = $_POST['nama1'];
+    $nm2 = $_POST['nama2'];
+    $nm3 = $_POST['nama3'];
+    $nm4 = $_POST['nama4'];
+    $nm5 = $_POST['nama5'];
+    $nm6 = $_POST['nama6'];
+    $ttl1 = $_POST['ttl1'];
+    $ttl2 = $_POST['ttl2'];
+    $ttl3 = $_POST['ttl3'];
+    $ttl4 = $_POST['ttl4'];
+    $ttl5 = $_POST['ttl5'];
+    $ttl6 = $_POST['ttl6'];
+    
+
+    // simpan data ke databse
+    $query = mysqli_query($conn,"UPDATE `datawarga` SET `jmlh_penghuni`='$jmlh',`roll_1`='$roll1',`nm_1`='$nm1',`ttl_1`='$ttl1',`roll_2`='$roll2',`nm_2`='$nm2',`ttl_2`='$ttl2',`roll_3`='$roll3',`nm_3`='$nm3',`ttl_3`='$ttl3',`roll_4`='$roll4',`nm_4`='$nm4',`ttl_4`='$ttl4',`roll_5`='$roll5',`nm_5`='$nm5',`ttl_5`='$ttl5',`roll_6`='$roll6',`nm_6`='$nm6',`ttl_6`='$ttl6' WHERE `username`='$username' ");
+    if($query){
+        echo "<script> alert('Data Berhasil diubah !');</script>";
+	    echo "<script> location='upDatawarga.php'; </script>";
+
+    }else{
+        echo "Data gagal di masukan ke databse";
+    }
+}
+?>
