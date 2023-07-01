@@ -64,22 +64,22 @@
     </nav>
 
     <div class="container d-flex justify-content-center align-items-center">
-        <form method="post" class="d-flex flex-column inputKeluhan">
+        <form method="POST" class="d-flex flex-column inputKeluhan">
             <h1 class="text-decoration-underline d-flex justify-content-center align-items-center mt-5">Silahkan Update
                 Akun
                 Warga</h1>
             <label class="mt-3" for="userName">Username</label>
             <select name="userName" class="px-2 py-1 mt-2 rounded-2" type="text">
                 <option value="" disabled="" selected="" hidden="">Pilih Sesuai Alamat Rumah</option>
-                <option value="ADMIN">L6NO1</option>
-                <option value="BASIC">BASIC</option>
-                <option value="OTHER">OTHER</option>
+                <option value="L6NO1">L6NO1</option>
+                <option value="L6NO2">L6NO2</option>
+                <option value="L6NO3">L6NO3</option>
             </select>
             <label class="mt-4" for=" Password">Update Password</label>
-            <input class="mt-1 px-2 py-1 rounded-2" type="password" id="inputPassword" name="password"
+            <input class="mt-1 px-2 py-1 rounded-2" type="password" id="inputPassword" name="pass"
                 placeholder="Masukan Password">
             <div class="d-flex mt-1 gap-1">
-                <input class="mt-1 btn btn-success mb-3 w-50" type="submit" name="upDatawarga" value="update">
+                <input class="mt-1 btn btn-success mb-3 w-50" type="submit" name="submit" value="update">
                 <input class="mt-1 btn btn-danger mb-3 w-50" type="submit" name="delDatawarga" value="Delete">
             </div>
         </form>
@@ -92,3 +92,21 @@
 </body>
 
 </html>
+<?php 
+include "/xampp/htdocs/blokL/koneksi.php";
+if(isset($_POST['submit'])){
+
+    $username = $_POST['userName'];
+    $pass = $_POST['pass'];
+    
+    // simpan data ke databse
+    $query = mysqli_query($conn,"UPDATE `akunwarga` SET pass='$pass' WHERE `username`='$username' ");
+    if($query){
+        echo "<script> alert('Data Berhasil diubah !');</script>";
+	    echo "<script> location='upAkunwarga.php'; </script>";
+
+    }else{
+        echo "Data gagal di masukan ke databse";
+    }
+}
+?>
