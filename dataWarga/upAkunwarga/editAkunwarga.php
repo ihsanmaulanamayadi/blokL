@@ -1,7 +1,7 @@
 <?php
 require "/xampp/htdocs/blokL/functions.php";
 
-$akunWarga = query("SELECT * FROM `akunwarga`"); 
+$drop = query("SELECT * FROM `akunwarga` ORDER BY `username`");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,22 +73,16 @@ $akunWarga = query("SELECT * FROM `akunwarga`");
             <h1 class="text-decoration-underline d-flex justify-content-center align-items-center mt-5">Silahkan Update
                 Akun
                 Warga</h1>
-            <?php foreach($akunWarga as $row) : ?>
             <label class="mt-3" for="userName">Username</label>
-            <!-- <select id="userName" name="userName" class="px-2 py-1 mt-2 rounded-2" type="text" value="">
-                <option value="" disabled="" selected="" hidden="">Pilih Sesuai Alamat Rumah</option>
-                <option value="L6NO1">L6NO1</option>
-                <option value="L6NO2">L6NO2</option>
-                <option value="L6NO3">L6NO3</option>
-            </select> -->
-            <input class="mt-1 px-2 py-1 rounded-2" type="text" id="inputUsername"  value="<?php echo $row["username"]; ?>" name="pass"
-                placeholder="Masukan username">
-            <label class="mt-4" for=" Password">Update Password</label>
-            <input class="mt-1 px-2 py-1 rounded-2" type="password" id="inputPassword"  value="<?php echo $row["pass"]; ?>" name="pass"
-                placeholder="Masukan Password">
+            <select id="userName" name="userName" class="px-2 py-1 mt-2 rounded-2" type="text" value="">
+            <?php foreach($drop as $row) : ?>
+                <option value=""><?php echo $row['username']; ?></option>
             <?php endforeach ?>
+            </select>
+            
+            
             <div class="d-flex mt-1 gap-1">
-                <button onclick="return confirm('Yakin update akun ini ?')" class="mt-1 btn btn-success mb-3 w-50" type="submit" name="upAkunwarga">Update</button>
+                <button onclick="return confirm('Yakin update akun ini ?')" class="mt-1 btn btn-warning mb-3 w-50" type="submit" name="upAkunwarga">edit</button>
                 <button onclick="return confirm('Yakin menghapus akun ini ?')" class="mt-1 btn btn-danger mb-3 w-50" type="submit" name="delDatawarga" href="#">Hapus</button>
             </div>
         </form>
