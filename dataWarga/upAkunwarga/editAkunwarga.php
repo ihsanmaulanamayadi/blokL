@@ -76,7 +76,7 @@ $drop = query("SELECT * FROM `akunwarga` ORDER BY `username`");
             <label class="mt-3" for="userName">Username</label>
             <select id="userName" name="userName" class="px-2 py-1 mt-2 rounded-2" type="text" value="">
             <?php foreach($drop as $row) : ?>
-                <option value=""><?php echo $row['username']; ?></option>
+                <option value="<?php echo $row['username']; ?>"><?php echo $row['username']; ?></option>
             <?php endforeach ?>
             </select>
             
